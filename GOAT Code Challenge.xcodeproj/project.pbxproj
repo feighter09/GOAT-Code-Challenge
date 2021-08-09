@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		D928E48E26C1D04800FA5083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E48D26C1D04800FA5083 /* AppDelegate.swift */; };
 		D928E49026C1D04800FA5083 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E48F26C1D04800FA5083 /* SceneDelegate.swift */; };
-		D928E49226C1D04800FA5083 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E49126C1D04800FA5083 /* ViewController.swift */; };
-		D928E49526C1D04800FA5083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D928E49326C1D04800FA5083 /* Main.storyboard */; };
 		D928E49726C1D04900FA5083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D928E49626C1D04900FA5083 /* Assets.xcassets */; };
 		D928E49A26C1D04900FA5083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D928E49826C1D04900FA5083 /* LaunchScreen.storyboard */; };
 		D928E4A526C1D04A00FA5083 /* GOAT_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4A426C1D04A00FA5083 /* GOAT_Code_ChallengeTests.swift */; };
 		D928E4B026C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4AF26C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift */; };
+		D928E4C026C1D12000FA5083 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4BE26C1D12000FA5083 /* WeatherListViewController.swift */; };
+		D928E4C126C1D12000FA5083 /* WeatherListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D928E4BF26C1D12000FA5083 /* WeatherListViewController.xib */; };
+		D928E4C326C1D12A00FA5083 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4C226C1D12A00FA5083 /* WeatherListViewModel.swift */; };
+		D928E4C526C1D13600FA5083 /* WeatherListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4C426C1D13600FA5083 /* WeatherListCoordinator.swift */; };
+		D928E4CD26C1D7C800FA5083 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4CC26C1D7C800FA5083 /* Bond.framework */; };
+		D928E4CE26C1D7C800FA5083 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4CC26C1D7C800FA5083 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D928E4D226C1D7E600FA5083 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D026C1D7E600FA5083 /* Differ.framework */; };
+		D928E4D326C1D7E600FA5083 /* Differ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D026C1D7E600FA5083 /* Differ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D928E4D626C1D80000FA5083 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D126C1D7E600FA5083 /* Nimble.framework */; };
+		D928E4D826C1D80000FA5083 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D726C1D80000FA5083 /* Quick.framework */; };
+		D928E4DA26C1D80800FA5083 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D926C1D80800FA5083 /* ReactiveKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +43,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D928E4CF26C1D7C800FA5083 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D928E4D326C1D7E600FA5083 /* Differ.framework in Embed Frameworks */,
+				D928E4CE26C1D7C800FA5083 /* Bond.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D928E48A26C1D04800FA5083 /* GOAT Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOAT Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D928E48D26C1D04800FA5083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D928E48F26C1D04800FA5083 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D928E49126C1D04800FA5083 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D928E49426C1D04800FA5083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D928E49626C1D04900FA5083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D928E49926C1D04900FA5083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D928E49B26C1D04900FA5083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +71,17 @@
 		D928E4AB26C1D04A00FA5083 /* GOAT Code ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOAT Code ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D928E4AF26C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOAT_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
 		D928E4B126C1D04A00FA5083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D928E4BE26C1D12000FA5083 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
+		D928E4BF26C1D12000FA5083 /* WeatherListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherListViewController.xib; sourceTree = "<group>"; };
+		D928E4C226C1D12A00FA5083 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+		D928E4C426C1D13600FA5083 /* WeatherListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCoordinator.swift; sourceTree = "<group>"; };
+		D928E4C926C1D27600FA5083 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		D928E4CA26C1D2E200FA5083 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
+		D928E4CC26C1D7C800FA5083 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
+		D928E4D026C1D7E600FA5083 /* Differ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differ.framework; path = Carthage/Build/iOS/Differ.framework; sourceTree = "<group>"; };
+		D928E4D126C1D7E600FA5083 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		D928E4D726C1D80000FA5083 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		D928E4D926C1D80800FA5083 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D928E4D226C1D7E600FA5083 /* Differ.framework in Frameworks */,
+				D928E4CD26C1D7C800FA5083 /* Bond.framework in Frameworks */,
+				D928E4DA26C1D80800FA5083 /* ReactiveKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D928E4D826C1D80000FA5083 /* Quick.framework in Frameworks */,
+				D928E4D626C1D80000FA5083 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +117,13 @@
 		D928E48126C1D04800FA5083 = {
 			isa = PBXGroup;
 			children = (
+				D928E4C926C1D27600FA5083 /* Cartfile */,
+				D928E4CA26C1D2E200FA5083 /* Cartfile.private */,
 				D928E48C26C1D04800FA5083 /* GOAT Code Challenge */,
 				D928E4A326C1D04A00FA5083 /* GOAT Code ChallengeTests */,
 				D928E4AE26C1D04A00FA5083 /* GOAT Code ChallengeUITests */,
 				D928E48B26C1D04800FA5083 /* Products */,
+				D928E4CB26C1D7C800FA5083 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +140,9 @@
 		D928E48C26C1D04800FA5083 /* GOAT Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				D928E48D26C1D04800FA5083 /* AppDelegate.swift */,
-				D928E48F26C1D04800FA5083 /* SceneDelegate.swift */,
-				D928E49126C1D04800FA5083 /* ViewController.swift */,
-				D928E49326C1D04800FA5083 /* Main.storyboard */,
+				D928E4BD26C1D0ED00FA5083 /* Weather List */,
+				D928E4C626C1D14A00FA5083 /* App Launch */,
 				D928E49626C1D04900FA5083 /* Assets.xcassets */,
-				D928E49826C1D04900FA5083 /* LaunchScreen.storyboard */,
 				D928E49B26C1D04900FA5083 /* Info.plist */,
 			);
 			path = "GOAT Code Challenge";
@@ -128,6 +166,39 @@
 			path = "GOAT Code ChallengeUITests";
 			sourceTree = "<group>";
 		};
+		D928E4BD26C1D0ED00FA5083 /* Weather List */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4BE26C1D12000FA5083 /* WeatherListViewController.swift */,
+				D928E4BF26C1D12000FA5083 /* WeatherListViewController.xib */,
+				D928E4C226C1D12A00FA5083 /* WeatherListViewModel.swift */,
+				D928E4C426C1D13600FA5083 /* WeatherListCoordinator.swift */,
+			);
+			path = "Weather List";
+			sourceTree = "<group>";
+		};
+		D928E4C626C1D14A00FA5083 /* App Launch */ = {
+			isa = PBXGroup;
+			children = (
+				D928E48D26C1D04800FA5083 /* AppDelegate.swift */,
+				D928E48F26C1D04800FA5083 /* SceneDelegate.swift */,
+				D928E49826C1D04900FA5083 /* LaunchScreen.storyboard */,
+			);
+			path = "App Launch";
+			sourceTree = "<group>";
+		};
+		D928E4CB26C1D7C800FA5083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4D926C1D80800FA5083 /* ReactiveKit.framework */,
+				D928E4D726C1D80000FA5083 /* Quick.framework */,
+				D928E4D026C1D7E600FA5083 /* Differ.framework */,
+				D928E4D126C1D7E600FA5083 /* Nimble.framework */,
+				D928E4CC26C1D7C800FA5083 /* Bond.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +209,7 @@
 				D928E48626C1D04800FA5083 /* Sources */,
 				D928E48726C1D04800FA5083 /* Frameworks */,
 				D928E48826C1D04800FA5083 /* Resources */,
+				D928E4CF26C1D7C800FA5083 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D928E49A26C1D04900FA5083 /* LaunchScreen.storyboard in Resources */,
+				D928E4C126C1D12000FA5083 /* WeatherListViewController.xib in Resources */,
 				D928E49726C1D04900FA5083 /* Assets.xcassets in Resources */,
-				D928E49526C1D04800FA5083 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D928E49226C1D04800FA5083 /* ViewController.swift in Sources */,
+				D928E4C026C1D12000FA5083 /* WeatherListViewController.swift in Sources */,
+				D928E4C526C1D13600FA5083 /* WeatherListCoordinator.swift in Sources */,
+				D928E4C326C1D12A00FA5083 /* WeatherListViewModel.swift in Sources */,
 				D928E48E26C1D04800FA5083 /* AppDelegate.swift in Sources */,
 				D928E49026C1D04800FA5083 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +370,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D928E49326C1D04800FA5083 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D928E49426C1D04800FA5083 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D928E49826C1D04900FA5083 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +504,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "GOAT Code Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +527,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "GOAT Code Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,6 +550,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "GOAT Code ChallengeTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,6 +576,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "GOAT Code ChallengeTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (

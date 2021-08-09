@@ -1,0 +1,5 @@
+github "DeclarativeHub/Bond" "7.8.1"
+github "DeclarativeHub/ReactiveKit" "v3.18.2"
+github "Quick/Nimble" "v9.2.0"
+github "Quick/Quick" "v4.0.0"
+github "tonyarnold/Differ" "1.4.5"
