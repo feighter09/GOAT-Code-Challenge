@@ -5,6 +5,7 @@
 //  Created by Austin Feight on 8/9/21.
 //
 
+import Kingfisher
 import UIKit
 
 class WeatherListViewController: UIViewController {
@@ -15,7 +16,7 @@ class WeatherListViewController: UIViewController {
   @IBOutlet private(set) weak var tableView: UITableView!
 
   private let viewModel: WeatherListViewModelType
-  init(viewModel: WeatherListViewModelType = WeatherListViewModel()) {
+  init(viewModel: WeatherListViewModelType) {
     self.viewModel = viewModel
 
     super.init(nibName: nil, bundle: nil)
@@ -24,7 +25,7 @@ class WeatherListViewController: UIViewController {
   required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented, use init(viewModel:)") }
 }
 
-// MARK - View Life Cycle
+// MARK: - View Life Cycle
 extension WeatherListViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -47,14 +48,22 @@ private extension WeatherListViewController {
   }
 
   func setupTableView() {
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: Constants.reuseIdentifier)
+    tableView.delegate = self
+    tableView.register(WeatherListCell.nib, forCellReuseIdentifier: Constants.reuseIdentifier)
     viewModel.days.bind(to: tableView) { viewModels, indexPath, tableView in
       let cell = tableView.dequeueReusableCell(withIdentifier: Constants.reuseIdentifier, for: indexPath)
 
       // Productionization: handle index not found better, at least report an error
       guard let viewModel = viewModels[safe: indexPath.row]
         else { return cell }
-      cell.textLabel?.text = viewModel.date + " | " + viewModel.temperature
+
+      cell.textLabel?.text = viewModel.date
+      cell.detailTextLabel?.text = viewModel.temperature
+      // Productionization: placeholder
+      cell.imageView?.kf.setImage(with: viewModel.iconURL) { result in
+        cell.setNeedsLayout()
+      }
+
       return cell
     }
   }
@@ -64,4 +73,10 @@ private extension WeatherListViewController {
   }
 }
 
+// MARK: - UITableViewDelegate
+extension WeatherListViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    viewModel.showDetails(for: indexPath.row)
+  }
+}
 

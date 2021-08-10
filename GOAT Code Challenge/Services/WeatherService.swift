@@ -9,18 +9,10 @@ import CoreLocation
 import Foundation
 
 protocol WeatherServiceType {
-  func fetch(for location: CLLocation, callback: @escaping (([WeatherService.Response]?) -> Void))
+  func fetch(for location: CLLocation, callback: @escaping (([DailyWeather]?) -> Void))
 }
 
 class WeatherService: WeatherServiceType {
-  struct Response: Codable {
-    let date: Int
-    let high: Decimal
-    let low: Decimal
-    let icon: String
-  }
-
-  #warning("-Type")
   private let urlSession: URLSession
   private let jsonDecoder: JSONDecoder
   init(urlSession: URLSession = URLSession(configuration: .default), jsonDecoder: JSONDecoder = JSONDecoder()) {
@@ -31,7 +23,7 @@ class WeatherService: WeatherServiceType {
 
 // MARK: - Interface
 extension WeatherService {
-  func fetch(for location: CLLocation, callback: @escaping (([WeatherService.Response]?) -> Void)) {
+  func fetch(for location: CLLocation, callback: @escaping (([DailyWeather]?) -> Void)) {
 
     guard let url = self.url(with: location.coordinate)
       else { return callback(nil) }
@@ -39,9 +31,8 @@ extension WeatherService {
     urlSession.dataTask(with: url) { [jsonDecoder] data, response, error in
       // Productionization: understand better what the response actually is, if we have more info about the error
       if let data = data.flatMap({ try? jsonDecoder.decode(JSONResponse.self, from: $0) }) {
-//        callback(data)
-        NSLog("\(data)")
-        callback(data.daily.compactMap(WeatherService.Response.init))
+        let response = data.daily.compactMap(DailyWeather.init)
+        callback(response)
       }
     }.resume()
   }
@@ -50,14 +41,14 @@ extension WeatherService {
 // MARK: - Helpers
 private extension WeatherService {
   func url(with coordinate: CLLocationCoordinate2D) -> URL? {
+    // Productionization: put this somewhere safer
     let key = "35d4f3309e9295e7e7278b0725de8e19"
 
-    #warning("test for building this URL")
     let url = "https://api.openweathermap.org/data/2.5/onecall?"
       + "lat=\(coordinate.latitude)"
-    + "&lon=\(coordinate.longitude)"
-    + "&exclude=minutely,hourly,alerts"
-    + "&appid=\(key)"
+      + "&lon=\(coordinate.longitude)"
+      + "&exclude=minutely,hourly,alerts"
+      + "&appid=\(key)"
 
     return URL(string: url)
   }
@@ -70,6 +61,7 @@ private extension WeatherService {
       }
       struct Weather: Codable {
         let icon: String
+        let description: String
       }
 
       let dt: Int
@@ -81,12 +73,13 @@ private extension WeatherService {
   }
 }
 
-private extension WeatherService.Response {
+private extension DailyWeather {
   init?(from day: WeatherService.JSONResponse.Daily) {
     date = day.dt
     high = day.temp.max
     low = day.temp.min
     // Productionization: handle this nil case better, at least report to remote service
     icon = day.weather.first?.icon ?? ""
+    description = day.weather.first?.description ?? ""
   }
 }
