@@ -11,8 +11,6 @@
 		D928E49026C1D04800FA5083 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E48F26C1D04800FA5083 /* SceneDelegate.swift */; };
 		D928E49726C1D04900FA5083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D928E49626C1D04900FA5083 /* Assets.xcassets */; };
 		D928E49A26C1D04900FA5083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D928E49826C1D04900FA5083 /* LaunchScreen.storyboard */; };
-		D928E4A526C1D04A00FA5083 /* GOAT_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4A426C1D04A00FA5083 /* GOAT_Code_ChallengeTests.swift */; };
-		D928E4B026C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4AF26C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift */; };
 		D928E4C026C1D12000FA5083 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4BE26C1D12000FA5083 /* WeatherListViewController.swift */; };
 		D928E4C126C1D12000FA5083 /* WeatherListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D928E4BF26C1D12000FA5083 /* WeatherListViewController.xib */; };
 		D928E4C326C1D12A00FA5083 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4C226C1D12A00FA5083 /* WeatherListViewModel.swift */; };
@@ -23,18 +21,23 @@
 		D928E4D326C1D7E600FA5083 /* Differ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D026C1D7E600FA5083 /* Differ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D928E4D626C1D80000FA5083 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D126C1D7E600FA5083 /* Nimble.framework */; };
 		D928E4D826C1D80000FA5083 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D726C1D80000FA5083 /* Quick.framework */; };
-		D928E4DA26C1D80800FA5083 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D926C1D80800FA5083 /* ReactiveKit.framework */; };
+		D928E4DF26C1DB0D00FA5083 /* WeatherListCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4DE26C1DB0D00FA5083 /* WeatherListCoordinatorSpec.swift */; };
+		D928E4E026C1DD0F00FA5083 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D926C1D80800FA5083 /* ReactiveKit.framework */; };
+		D928E4E126C1DD0F00FA5083 /* ReactiveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4D926C1D80800FA5083 /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D928E4E326C1DE4800FA5083 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D928E4D726C1D80000FA5083 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D928E4E426C1DE4800FA5083 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D928E4D126C1D7E600FA5083 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D928E4E626C1DE7800FA5083 /* WeatherListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4E526C1DE7800FA5083 /* WeatherListViewControllerSpec.swift */; };
+		D928E4E826C1DF5100FA5083 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = D928E4E726C1DF5100FA5083 /* Notes */; };
+		D928E4EB26C2135500FA5083 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4EA26C2135500FA5083 /* LocationService.swift */; };
+		D928E4ED26C2148100FA5083 /* WeatherListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4EC26C2148100FA5083 /* WeatherListViewModelSpec.swift */; };
+		D928E4F026C2168A00FA5083 /* CLLocationManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4EF26C2168A00FA5083 /* CLLocationManagerType.swift */; };
+		D928E4F326C217F300FA5083 /* LocationServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4F226C217F300FA5083 /* LocationServiceSpec.swift */; };
+		D928E4F526C21AA700FA5083 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4F426C21AA700FA5083 /* WeatherService.swift */; };
+		D928E4F826C22AF200FA5083 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4F726C22AF200FA5083 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D928E4A126C1D04A00FA5083 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D928E48226C1D04800FA5083 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D928E48926C1D04800FA5083;
-			remoteInfo = "GOAT Code Challenge";
-		};
-		D928E4AC26C1D04A00FA5083 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D928E48226C1D04800FA5083 /* Project object */;
 			proxyType = 1;
@@ -51,9 +54,21 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D928E4D326C1D7E600FA5083 /* Differ.framework in Embed Frameworks */,
+				D928E4E126C1DD0F00FA5083 /* ReactiveKit.framework in Embed Frameworks */,
 				D928E4CE26C1D7C800FA5083 /* Bond.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D928E4E226C1DE3900FA5083 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D928E4E326C1DE4800FA5083 /* Quick.framework in CopyFiles */,
+				D928E4E426C1DE4800FA5083 /* Nimble.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -66,11 +81,7 @@
 		D928E49926C1D04900FA5083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D928E49B26C1D04900FA5083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D928E4A026C1D04A00FA5083 /* GOAT Code ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOAT Code ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D928E4A426C1D04A00FA5083 /* GOAT_Code_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOAT_Code_ChallengeTests.swift; sourceTree = "<group>"; };
 		D928E4A626C1D04A00FA5083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D928E4AB26C1D04A00FA5083 /* GOAT Code ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOAT Code ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D928E4AF26C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOAT_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
-		D928E4B126C1D04A00FA5083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D928E4BE26C1D12000FA5083 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
 		D928E4BF26C1D12000FA5083 /* WeatherListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherListViewController.xib; sourceTree = "<group>"; };
 		D928E4C226C1D12A00FA5083 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
@@ -82,6 +93,15 @@
 		D928E4D126C1D7E600FA5083 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		D928E4D726C1D80000FA5083 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		D928E4D926C1D80800FA5083 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
+		D928E4DE26C1DB0D00FA5083 /* WeatherListCoordinatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCoordinatorSpec.swift; sourceTree = "<group>"; };
+		D928E4E526C1DE7800FA5083 /* WeatherListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewControllerSpec.swift; sourceTree = "<group>"; };
+		D928E4E726C1DF5100FA5083 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		D928E4EA26C2135500FA5083 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D928E4EC26C2148100FA5083 /* WeatherListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelSpec.swift; sourceTree = "<group>"; };
+		D928E4EF26C2168A00FA5083 /* CLLocationManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManagerType.swift; sourceTree = "<group>"; };
+		D928E4F226C217F300FA5083 /* LocationServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceSpec.swift; sourceTree = "<group>"; };
+		D928E4F426C21AA700FA5083 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		D928E4F726C22AF200FA5083 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +110,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D928E4D226C1D7E600FA5083 /* Differ.framework in Frameworks */,
+				D928E4E026C1DD0F00FA5083 /* ReactiveKit.framework in Frameworks */,
 				D928E4CD26C1D7C800FA5083 /* Bond.framework in Frameworks */,
-				D928E4DA26C1D80800FA5083 /* ReactiveKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,24 +124,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D928E4A826C1D04A00FA5083 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D928E48126C1D04800FA5083 = {
 			isa = PBXGroup;
 			children = (
+				D928E4E726C1DF5100FA5083 /* Notes */,
 				D928E4C926C1D27600FA5083 /* Cartfile */,
 				D928E4CA26C1D2E200FA5083 /* Cartfile.private */,
 				D928E48C26C1D04800FA5083 /* GOAT Code Challenge */,
 				D928E4A326C1D04A00FA5083 /* GOAT Code ChallengeTests */,
-				D928E4AE26C1D04A00FA5083 /* GOAT Code ChallengeUITests */,
 				D928E48B26C1D04800FA5083 /* Products */,
 				D928E4CB26C1D7C800FA5083 /* Frameworks */,
 			);
@@ -132,7 +145,6 @@
 			children = (
 				D928E48A26C1D04800FA5083 /* GOAT Code Challenge.app */,
 				D928E4A026C1D04A00FA5083 /* GOAT Code ChallengeTests.xctest */,
-				D928E4AB26C1D04A00FA5083 /* GOAT Code ChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +152,9 @@
 		D928E48C26C1D04800FA5083 /* GOAT Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				D928E4F626C22AE800FA5083 /* Extensions */,
+				D928E4EE26C2167B00FA5083 /* Foundation Protocols */,
+				D928E4E926C2133F00FA5083 /* Services */,
 				D928E4BD26C1D0ED00FA5083 /* Weather List */,
 				D928E4C626C1D14A00FA5083 /* App Launch */,
 				D928E49626C1D04900FA5083 /* Assets.xcassets */,
@@ -151,19 +166,10 @@
 		D928E4A326C1D04A00FA5083 /* GOAT Code ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				D928E4A426C1D04A00FA5083 /* GOAT_Code_ChallengeTests.swift */,
+				D928E4DB26C1DAD200FA5083 /* Tests */,
 				D928E4A626C1D04A00FA5083 /* Info.plist */,
 			);
 			path = "GOAT Code ChallengeTests";
-			sourceTree = "<group>";
-		};
-		D928E4AE26C1D04A00FA5083 /* GOAT Code ChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D928E4AF26C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift */,
-				D928E4B126C1D04A00FA5083 /* Info.plist */,
-			);
-			path = "GOAT Code ChallengeUITests";
 			sourceTree = "<group>";
 		};
 		D928E4BD26C1D0ED00FA5083 /* Weather List */ = {
@@ -199,6 +205,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D928E4DB26C1DAD200FA5083 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4F126C217E100FA5083 /* Services */,
+				D928E4DC26C1DAD800FA5083 /* Weather List */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D928E4DC26C1DAD800FA5083 /* Weather List */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4DE26C1DB0D00FA5083 /* WeatherListCoordinatorSpec.swift */,
+				D928E4E526C1DE7800FA5083 /* WeatherListViewControllerSpec.swift */,
+				D928E4EC26C2148100FA5083 /* WeatherListViewModelSpec.swift */,
+			);
+			path = "Weather List";
+			sourceTree = "<group>";
+		};
+		D928E4E926C2133F00FA5083 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4EA26C2135500FA5083 /* LocationService.swift */,
+				D928E4F426C21AA700FA5083 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D928E4EE26C2167B00FA5083 /* Foundation Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4EF26C2168A00FA5083 /* CLLocationManagerType.swift */,
+			);
+			path = "Foundation Protocols";
+			sourceTree = "<group>";
+		};
+		D928E4F126C217E100FA5083 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4F226C217F300FA5083 /* LocationServiceSpec.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D928E4F626C22AE800FA5083 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D928E4F726C22AF200FA5083 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +285,7 @@
 				D928E49C26C1D04A00FA5083 /* Sources */,
 				D928E49D26C1D04A00FA5083 /* Frameworks */,
 				D928E49E26C1D04A00FA5083 /* Resources */,
+				D928E4E226C1DE3900FA5083 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -237,24 +296,6 @@
 			productName = "GOAT Code ChallengeTests";
 			productReference = D928E4A026C1D04A00FA5083 /* GOAT Code ChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D928E4AA26C1D04A00FA5083 /* GOAT Code ChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D928E4BA26C1D04A00FA5083 /* Build configuration list for PBXNativeTarget "GOAT Code ChallengeUITests" */;
-			buildPhases = (
-				D928E4A726C1D04A00FA5083 /* Sources */,
-				D928E4A826C1D04A00FA5083 /* Frameworks */,
-				D928E4A926C1D04A00FA5083 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D928E4AD26C1D04A00FA5083 /* PBXTargetDependency */,
-			);
-			name = "GOAT Code ChallengeUITests";
-			productName = "GOAT Code ChallengeUITests";
-			productReference = D928E4AB26C1D04A00FA5083 /* GOAT Code ChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -270,10 +311,7 @@
 					};
 					D928E49F26C1D04A00FA5083 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = D928E48926C1D04800FA5083;
-					};
-					D928E4AA26C1D04A00FA5083 = {
-						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = D928E48926C1D04800FA5083;
 					};
 				};
@@ -293,7 +331,6 @@
 			targets = (
 				D928E48926C1D04800FA5083 /* GOAT Code Challenge */,
 				D928E49F26C1D04A00FA5083 /* GOAT Code ChallengeTests */,
-				D928E4AA26C1D04A00FA5083 /* GOAT Code ChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,13 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D928E4A926C1D04A00FA5083 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D928E4E826C1DF5100FA5083 /* Notes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,10 +361,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D928E4F526C21AA700FA5083 /* WeatherService.swift in Sources */,
+				D928E4F826C22AF200FA5083 /* Array+Extensions.swift in Sources */,
 				D928E4C026C1D12000FA5083 /* WeatherListViewController.swift in Sources */,
+				D928E4F026C2168A00FA5083 /* CLLocationManagerType.swift in Sources */,
 				D928E4C526C1D13600FA5083 /* WeatherListCoordinator.swift in Sources */,
 				D928E4C326C1D12A00FA5083 /* WeatherListViewModel.swift in Sources */,
 				D928E48E26C1D04800FA5083 /* AppDelegate.swift in Sources */,
+				D928E4EB26C2135500FA5083 /* LocationService.swift in Sources */,
 				D928E49026C1D04800FA5083 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,15 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D928E4A526C1D04A00FA5083 /* GOAT_Code_ChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D928E4A726C1D04A00FA5083 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D928E4B026C1D04A00FA5083 /* GOAT_Code_ChallengeUITests.swift in Sources */,
+				D928E4E626C1DE7800FA5083 /* WeatherListViewControllerSpec.swift in Sources */,
+				D928E4F326C217F300FA5083 /* LocationServiceSpec.swift in Sources */,
+				D928E4ED26C2148100FA5083 /* WeatherListViewModelSpec.swift in Sources */,
+				D928E4DF26C1DB0D00FA5083 /* WeatherListCoordinatorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,11 +391,6 @@
 			isa = PBXTargetDependency;
 			target = D928E48926C1D04800FA5083 /* GOAT Code Challenge */;
 			targetProxy = D928E4A126C1D04A00FA5083 /* PBXContainerItemProxy */;
-		};
-		D928E4AD26C1D04A00FA5083 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D928E48926C1D04800FA5083 /* GOAT Code Challenge */;
-			targetProxy = D928E4AC26C1D04A00FA5083 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,6 +542,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -540,6 +567,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -548,6 +576,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -563,9 +592,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lostinflight.GOAT-Code-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOAT Code Challenge.app/GOAT Code Challenge";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -574,6 +605,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -592,46 +624,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOAT Code Challenge.app/GOAT Code Challenge";
-			};
-			name = Release;
-		};
-		D928E4BB26C1D04A00FA5083 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4KG26Y879R;
-				INFOPLIST_FILE = "GOAT Code ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lostinflight.GOAT-Code-ChallengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GOAT Code Challenge";
-			};
-			name = Debug;
-		};
-		D928E4BC26C1D04A00FA5083 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4KG26Y879R;
-				INFOPLIST_FILE = "GOAT Code ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lostinflight.GOAT-Code-ChallengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GOAT Code Challenge";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -661,15 +654,6 @@
 			buildConfigurations = (
 				D928E4B826C1D04A00FA5083 /* Debug */,
 				D928E4B926C1D04A00FA5083 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D928E4BA26C1D04A00FA5083 /* Build configuration list for PBXNativeTarget "GOAT Code ChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D928E4BB26C1D04A00FA5083 /* Debug */,
-				D928E4BC26C1D04A00FA5083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
