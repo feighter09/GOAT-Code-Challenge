@@ -9,7 +9,7 @@ import Kingfisher
 import UIKit
 
 class WeatherListViewController: UIViewController {
-  private enum Constants {
+  fileprivate enum Constants {
     static let reuseIdentifier = "cell"
   }
 
@@ -50,27 +50,36 @@ private extension WeatherListViewController {
   func setupTableView() {
     tableView.delegate = self
     tableView.register(WeatherListCell.nib, forCellReuseIdentifier: Constants.reuseIdentifier)
-    viewModel.days.bind(to: tableView) { viewModels, indexPath, tableView in
-      let cell = tableView.dequeueReusableCell(withIdentifier: Constants.reuseIdentifier, for: indexPath)
-
-      // Productionization: handle index not found better, at least report an error
-      guard let viewModel = viewModels[safe: indexPath.row]
-        else { return cell }
-
-      cell.textLabel?.text = viewModel.date
-      cell.detailTextLabel?.text = viewModel.temperature
-      // Productionization: placeholder for visual and to prevent the weird resize on load
-      cell.imageView?.kf.setImage(with: viewModel.iconURL) { result in
-        cell.setNeedsLayout()
-      }
-
-      return cell
-    }
+    viewModel.days.bind(to: tableView, createCell: createCell)
   }
 
   @objc func requestLocation() {
     viewModel.requestLocationPermission()
   }
+}
+
+private func createCell(
+  viewModels: [WeatherListViewModel.CellViewModel],
+  indexPath: IndexPath,
+  tableView: UITableView
+) -> UITableViewCell {
+  let cell = tableView.dequeueReusableCell(
+    withIdentifier: WeatherListViewController.Constants.reuseIdentifier,
+    for: indexPath
+  )
+
+  // Productionization: handle index not found better, at least report an error
+  guard let viewModel = viewModels[safe: indexPath.row]
+    else { return cell }
+
+  cell.textLabel?.text = viewModel.date
+  cell.detailTextLabel?.text = viewModel.temperature
+  // Productionization: placeholder for visual and to prevent the weird resize on load
+  cell.imageView?.kf.setImage(with: viewModel.iconURL) { result in
+    cell.setNeedsLayout()
+  }
+
+  return cell
 }
 
 // MARK: - UITableViewDelegate
@@ -79,4 +88,3 @@ extension WeatherListViewController: UITableViewDelegate {
     viewModel.showDetails(for: indexPath.row)
   }
 }
-
