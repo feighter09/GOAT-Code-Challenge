@@ -1,3 +1,5 @@
 Productionization:
   - Localization
   - Log errors to external server
+
+Also, this thing should have tests. I started writing some and realized we don't have time to do so here, so the test target does not compile

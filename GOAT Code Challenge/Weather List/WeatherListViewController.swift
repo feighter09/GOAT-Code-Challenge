@@ -59,7 +59,7 @@ private extension WeatherListViewController {
 
       cell.textLabel?.text = viewModel.date
       cell.detailTextLabel?.text = viewModel.temperature
-      // Productionization: placeholder
+      // Productionization: placeholder for visual and to prevent the weird resize on load
       cell.imageView?.kf.setImage(with: viewModel.iconURL) { result in
         cell.setNeedsLayout()
       }
