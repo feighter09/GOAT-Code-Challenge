@@ -34,6 +34,8 @@
 		D928E4F326C217F300FA5083 /* LocationServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4F226C217F300FA5083 /* LocationServiceSpec.swift */; };
 		D928E4F526C21AA700FA5083 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4F426C21AA700FA5083 /* WeatherService.swift */; };
 		D928E4F826C22AF200FA5083 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928E4F726C22AF200FA5083 /* Array+Extensions.swift */; };
+		D928E4FD26C2BA0500FA5083 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4FC26C2BA0500FA5083 /* Kingfisher.framework */; };
+		D928E4FE26C2BA0500FA5083 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D928E4FC26C2BA0500FA5083 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 			files = (
 				D928E4D326C1D7E600FA5083 /* Differ.framework in Embed Frameworks */,
 				D928E4E126C1DD0F00FA5083 /* ReactiveKit.framework in Embed Frameworks */,
+				D928E4FE26C2BA0500FA5083 /* Kingfisher.framework in Embed Frameworks */,
 				D928E4CE26C1D7C800FA5083 /* Bond.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -102,6 +105,8 @@
 		D928E4F226C217F300FA5083 /* LocationServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceSpec.swift; sourceTree = "<group>"; };
 		D928E4F426C21AA700FA5083 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		D928E4F726C22AF200FA5083 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		D928E4F926C2B92A00FA5083 /* Kingfisher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Kingfisher.xcframework; path = Carthage/Build/Kingfisher.xcframework; sourceTree = "<group>"; };
+		D928E4FC26C2BA0500FA5083 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,7 @@
 			files = (
 				D928E4D226C1D7E600FA5083 /* Differ.framework in Frameworks */,
 				D928E4E026C1DD0F00FA5083 /* ReactiveKit.framework in Frameworks */,
+				D928E4FD26C2BA0500FA5083 /* Kingfisher.framework in Frameworks */,
 				D928E4CD26C1D7C800FA5083 /* Bond.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +202,8 @@
 		D928E4CB26C1D7C800FA5083 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D928E4FC26C2BA0500FA5083 /* Kingfisher.framework */,
+				D928E4F926C2B92A00FA5083 /* Kingfisher.xcframework */,
 				D928E4D926C1D80800FA5083 /* ReactiveKit.framework */,
 				D928E4D726C1D80000FA5083 /* Quick.framework */,
 				D928E4D026C1D7E600FA5083 /* Differ.framework */,
